@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name="faceanlz",
@@ -7,6 +7,11 @@ setup(
     author="MheenKyoungWhan",
     author_email="kwmheen@gmail.com",
     license="MheenKyoungWhan",
-    url="https://github.com/kwmheen357/KIST_FaceDetection",
+    packages = find_packages(),
+    url="https://github.com/kwmheen357/FaceAnlz.git",
     py_modules=["pandas", "mediapipe", "cv2"],
+    install_requires =[
+        'mediapipe==0.8.10',
+        'numpy==1.23.0',
+        'pandas==1.4.2',],
 )
